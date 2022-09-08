@@ -11,23 +11,93 @@
 
 </head>
 <body>
-    <div class="titulo"></div>
+    <div class="titulo">
+        <h1>Vitu Lanches</h1>
+        <span>Sua comida em 6 minutos</span>
+    </div>
     <div class="container">
-        <div class="pratos">
-            <h2>Primeiro, seu hamburger!</h2>
-            <div class="prato borda">
-                <img src="./images/simples.jpg">
-                <h3>Smash Simples</h3>
-                <span>80g de carne e um queijo cheddar saboroso, de um jeito inesquecível </span>
-                <h3>R$ 14,90</h3>
-                <ion-icon name="checkmark-circle" class="oculto"></ion-icon>
+        <div class="pedido">
+            <h2>Primeiro escolha seu hamburguer</h2>
+            <div class="pratos">        
+                <div class="prato">
+                    <img src="./images/simples.jpg">
+                    <h3>Smash Simples</h3>
+                    <span>80g de hamburger smash, queijo cheddar e maionese de alho</span>
+                    <h3>R$ 15,90</h3>
+                    <ion-icon name="checkmark-circle" class="oculto"></ion-icon>
+                </div>
+                <div class="prato">
+                    <img src="./images/duplo.jpg">
+                    <h3>Smash Duplo</h3>
+                    <span>160g de hamburger smash, queijo cheddar e maionese de alho</span>
+                    <h3>R$ 18,90</h3>
+                    <ion-icon name="checkmark-circle" class="oculto"></ion-icon>
+                </div>
+                <div class="prato">
+                    <img src="./images/triplo.jpg">
+                    <h3>Smash Triple</h3>
+                    <span>240g de hamburger smash, queijo cheddar e maionese de alho</span>
+                    <h3>R$ 22,90</h3>
+                    <ion-icon name="checkmark-circle" class="oculto"></ion-icon>
+                </div>
             </div>
         </div>
-        <div class="acompanhamentos"></div>
-        <div class="bebidas"></div>
+        <div class="pedido">
+            <h2>Escolha o seu acompanhamento</h2>
+            <div class="pratos">        
+                <div class="prato">
+                    <img src="./images/batata.jpg">
+                    <h3>Batata Simples</h3>
+                    <span>80g de batata frita, sequinha e crocante</span>
+                    <h3>R$ 8,90</h3>
+                    <ion-icon name="checkmark-circle" class="oculto"></ion-icon>
+                </div>
+                <div class="prato">
+                    <img src="./images/onion.jpg">
+                    <h3>Onion Rings</h3>
+                    <span>80g de anéis de cebolas empanados e fritos. Molho não incluso</span>
+                    <h3>R$ 12,90</h3>
+                    <ion-icon name="checkmark-circle" class="oculto"></ion-icon>
+                </div>
+                <div class="prato">
+                    <img src="./images/batata-bacon.jpg">
+                    <h3>Batata com chedda e bacon</h3>
+                    <span>160g da nossa batata especial, cheddar cremoso e pedaços de bacon</span>
+                    <h3>R$ 18,90</h3>
+                    <ion-icon name="checkmark-circle" class="oculto"></ion-icon>
+                </div>
+            </div>
+        </div> 
+        <div class="pedido">
+            <h2>Escolha sua bebida</h2>
+            <div class="pratos">        
+                <div class="prato">
+                    <img src="./images/coca.jfif">
+                    <h3>Coca cola - Lata 350 ml</h3>
+                    <span>Refrigerante - 350 ml</span>
+                    <h3>R$ 7,90</h3>
+                    <ion-icon name="checkmark-circle" class="oculto"></ion-icon>
+                </div>
+                <div class="prato">
+                    <img src="./images/mate.jpg">
+                    <h3>Ice tea - Limão</h3>
+                    <span>Ice tea sabor limão - 450 ml</span>
+                    <h3>R$ 6,90</h3>
+                    <ion-icon name="checkmark-circle" class="oculto"></ion-icon>
+                </div>
+                <div class="prato">
+                    <img src="./images/Milk.jpg">
+                    <h3>Milkshake Ovomaltine</h3>
+                    <span>Tradicional milkshake de ovomaltine - 400 ml</span>
+                    <h3>R$ 14,90</h3>
+                    <ion-icon name="checkmark-circle" class="oculto"></ion-icon>
+                </div>
+            </div>
+        </div>   
     </div>
     <div class="footbar">
-        <button></button>
+        <button class="pedido-incompleto">Selecione os 3 itens para fechar o pedido</button>
+        <button class="pedido-completo oculto">Fechar pedido</button>
     </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="scripts.js"></script>
