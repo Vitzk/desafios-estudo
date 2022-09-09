@@ -71,6 +71,11 @@ function fecharPedido() {
 
 }
 
-function confirmarPedido() {
-
+function enviarPedido() {
+    const descricao = `Olá, gostaria de fazer o pedido:\n- Hamburguer: ${hamburguerNome}\n- Acompanhamento: ${acompanhamentoNome}\n- Bebida: ${bebidaNome}\nTotal: R$ ${(
+    total).toFixed(2)}`;
+    const urlZapZap = `https://wa.me/5521997075719?text=${encodeURIComponent(
+    descricao
+    )}`;  
+    window.open(urlZapZap);
 }

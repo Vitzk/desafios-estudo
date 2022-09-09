@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    
+
     <title>VituLanches</title>
 
 </head>
+
 <body>
     <div class="titulo">
         <h1>Vitu Lanches</h1>
@@ -18,7 +20,7 @@
     <div class="container">
         <div class="pedido">
             <h2>Primeiro escolha seu hamburguer</h2>
-            <div class="pratos">        
+            <div class="pratos">
                 <div class="prato" onclick="selecionarHamburguer(this)">
                     <img src="./images/simples.jpg">
                     <h3>Smash Simples</h3>
@@ -44,7 +46,7 @@
         </div>
         <div class="pedido">
             <h2>Escolha o seu acompanhamento</h2>
-            <div class="pratos">        
+            <div class="pratos">
                 <div class="prato" onclick="selecionarAcompanhamento(this)">
                     <img src="./images/batata.jpg">
                     <h3>Batata Simples</h3>
@@ -67,10 +69,10 @@
                     <ion-icon name="checkmark-circle" class="oculto"></ion-icon>
                 </div>
             </div>
-        </div> 
+        </div>
         <div class="pedido">
             <h2>Escolha sua bebida</h2>
-            <div class="pratos">        
+            <div class="pratos">
                 <div class="prato" onclick="selecionarBebida(this)">
                     <img src="./images/coca.jfif">
                     <h3>Coca cola - Lata 350 ml</h3>
@@ -93,11 +95,11 @@
                     <ion-icon name="checkmark-circle" class="oculto"></ion-icon>
                 </div>
             </div>
-        </div>   
+        </div>
     </div>
     <div class="footbar">
         <button class="incompleto">Selecione os 3 itens para fechar o pedido</button>
-        <button class="completo oculto">Fechar pedido</button>
+        <button class="completo oculto" onclick="enviarPedido()">Fechar pedido</button>
     </div>
     <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="script.js"></script>
