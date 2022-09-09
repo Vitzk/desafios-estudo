@@ -150,13 +150,7 @@ span {
 
 .confirmacao {
         opacity: 0.6;
+        
 }
 
-.lanche {
-    background-color: #32b72f;
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
+
