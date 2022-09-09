@@ -51,14 +51,22 @@ h1 {
     font-size: 18px;
 }
 
-.footbar .pedido-incompleto {
+.footbar button {
+    margin: 15px 25px;
+    width: 100%;    
+    border: none;
+    border-radius: 50px;  
+}
+
+.incompleto {
     font-size: 20px;
     align-items: center;
     justify-content: center;
     color: #fff;
+    background-color: #cbcbcb;
 }
 
-.footbar .pedido-completo {
+.completo {
     font-size: 20px;
     align-items: center;
     justify-content: center;
@@ -66,13 +74,7 @@ h1 {
     background-color: #32b72f;
 }
 
-.footbar button {
-    margin: 15px 25px;
-    width: 100%;
-    background-color: #cbcbcb;
-    border: none;
-    border-radius: 50px;  
-}
+
 
 ion-icon {
     color: #32b72f;
@@ -111,24 +113,38 @@ ion-icon {
 
 }
 
-.prato img {
+
+img {
     width: 144px;
     height: 87px;    
     border-radius: 4px;
     margin: 10px 0px 0px 10px;
 }
 
-.prato h3 {
+h3 {
     font-weight: bold;
     font-size: 16px;
 }
 
-.prato span {
+h4 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+span {
     font-size: 15px;
     color: #a6a6a6;
 }
 
-.selecionado {
+.selecionado1 {
+    border: 5px solid #32b72f;
+}
+
+.selecionado2 {
+    border: 5px solid #32b72f;
+}
+
+.selecionado3 {
     border: 5px solid #32b72f;
 }
 
