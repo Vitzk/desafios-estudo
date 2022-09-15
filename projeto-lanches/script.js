@@ -74,12 +74,22 @@ function fecharPedido() {
         document.querySelector(".incompleto").classList.add("oculto");
         total = (hamburguerValor + acompanhamentoValor + bebidaValor);
     }
-
+    
 }
 
 function confirmarPedido() {
-    document.querySelector(".confirmacao").classList.remove("oculto");
-    
+    document.querySelector(".overlay").classList.remove("oculto");
+
+    document.querySelector(".hamburguerResumo .nomeResumo").innerHTML = hamburguerNome;
+    document.querySelector(".hamburguerResumo .precoResumo").innerHTML = `R$ ${hamburguerValor.toFixed(2)}`;
+
+    document.querySelector(".acompanhamentoResumo .nomeResumo").innerHTML = acompanhamentoNome;
+    document.querySelector(".acompanhamentoResumo .precoResumo").innerHTML = `R$ ${acompanhamentoValor.toFixed(2)}`;
+
+    document.querySelector(".bebidaResumo .nomeResumo").innerHTML = bebidaNome;
+    document.querySelector(".bebidaResumo .precoResumo").innerHTML = `R$ ${bebidaValor.toFixed(2)}`;
+
+    document.querySelector(".preco-total").innerHTML = `R$ ${total.toFixed(2)}`;
 }
 
 function enviarPedido() {
@@ -89,4 +99,8 @@ function enviarPedido() {
     descricao
     )}`;  
     window.open(urlZapZap);
+}
+
+function cancelarPedido() {
+    document.querySelector(".overlay").classList.add("oculto");
 }
